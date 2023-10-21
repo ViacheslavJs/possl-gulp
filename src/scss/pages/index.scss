@@ -1,0 +1,451 @@
+/* variable modules */
+
+.page-home {
+  font-family: sans-serif;         
+}
+
+/***** TODO - module our-services *********************/
+.model {
+  font-size: 16px;   
+  padding: 50px 0;
+  padding: 50px 0;
+  @media screen and (max-width: 835px) {
+    font-size: calc(0px + (40 * 0.7) * (100vw - 320px) / 950);  
+  }
+ 
+}
+
+.auto-models {
+  display: flex;
+  flex-direction: row;            
+  justify-content: space-between; 
+  align-items: center;     
+  margin: 0 50px;
+        
+  &__title {    
+    display: block;  
+    margin: 5px 0;
+    font-size: 2em;   
+  } 
+  
+  &__price {
+    display: block;  
+    font-size: 1.9em;   
+  } 
+      
+}
+
+.auto-identifier {
+  display: flex;
+  flex-direction: row;           
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0 50px;   
+                   
+  &__price-note {
+    padding: 3px 0 3px 0;
+    display: block;  
+    font-size: 1em;   
+  } 
+  
+}
+
+.auto-feature {
+  display: flex;
+  flex-direction: row;           
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0 50px;   
+                   
+  &__price-note {
+    padding: 3px 0 3px 0;
+    display: block;  
+    font-size: 1em;   
+  } 
+  
+}
+  
+.feature-box {
+  display: flex;
+  flex-direction: row;           
+  justify-content: space-between; 
+  align-items: center;
+  padding: 22px 0;
+                                   
+  &__icon {     
+    padding: 0;   
+    height: 1.75em; 
+    cursor: pointer;  
+  } 
+  .icon--alignment { 
+    margin-left: 0;
+    padding-left: 0;
+  } 
+  &__text {
+    padding: 3px 0 3px 0;
+    display: block; 
+    padding: 10px 30px 10px 5px; 
+    font-size: 1em; 
+  }
+ 
+}
+
+.auto-models,
+.auto-identifier,
+.auto-feature  {
+  @media screen and (max-width: 773px) {
+    margin: 0;
+    font-size: calc(4px + (40 * 0.7) * (100vw - 320px) / 950);    
+  }
+  
+}
+  
+.auto-box {
+  display: flex;
+  flex-direction: row;           
+  justify-content: space-between; 
+  align-items: center;
+                                  
+ &__auto-name {   
+    padding: 3px 20px 3px 0;
+    font-size: 1.25em;   
+  } 
+  &__auto-code {
+    padding: 3px 20px 3px 0;   
+    font-size: 1.25em;   
+  } 
+  &__code-copy {     
+    padding: 0;   
+    /*width: 1em; /* for a photo icon */
+    font-size: 1.4em;
+    color: #4e7b7d;
+    cursor: pointer;  
+  } 
+ 
+}
+
+.social-box {
+  display: flex;
+  flex-direction: row;           
+  justify-content: flex-end;
+  align-items: flex-end;   
+                
+  &__social {
+    margin: 0 15px;
+    padding: 3px 0 3px 0;
+    display: block;  
+    height: 2.25em; 
+    cursor: pointer;  
+     
+  } 
+  .social--alignment { 
+    margin-right: 0;
+    padding-right: 0;
+  } 
+   
+}
+
+.container {
+ 
+}
+
+.container--desktop {
+  @media screen and (max-width: 650px) {
+    display: none;   
+  }
+}
+
+.container--mobile {
+  font-size: 16px; 
+  @media screen and (min-width: 651px) {
+    display: none;   
+  }
+}
+
+/* swiper */
+.swiper-container {
+  
+}
+
+.slide-box {
+  width: 100%; 
+}
+
+.slide {
+  display: block;        
+  width: 100%; 
+  margin: 0 auto;
+  object-fit: cover;  
+}
+
+/* swiper */
+
+.mob-auto-models,
+.mob-auto-identifier,
+.mob-auto-feature, {
+  font-size: 16px;   
+  margin: 10px 0;  
+}
+
+.mob-auto-models {
+  display: flex;
+  flex-direction: row;            
+  justify-content: space-between; 
+  align-items: flex-end;   
+          
+  &__title {    
+   display: block;  
+   margin: 25px 35px 0 0;
+   font-size: 1.5em;   
+   font-weight: 500;
+  } 
+  
+  &__price {
+   display: block;  
+   font-size: 1.9em;   
+  } 
+      
+}
+
+.mob-auto-identifier {
+  display: flex;
+  flex-direction: row;           
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;                    
+                                  
+  &__name {   
+    padding: 3px 20px 3px 0;
+    font-size: 1.12em;   
+  }   
+  
+  &__price {
+    padding: 3px 0 3px 0;
+    display: block;  
+    font-size: 1.12em;   
+    font-weight: 600;
+  }   
+  
+  &__weight {   
+    padding: 3px 20px 3px 0;
+    font-size: 1em;   
+  }   
+  
+  &__value {
+    padding: 3px 0 3px 0;
+    font-size: 1em;   
+  }
+                   
+}
+
+.identifier-copy {
+  display: flex;
+  flex-direction: row;           
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
+  margin: 10px 0 20px 0;                      
+                                  
+  &__code {   
+    padding: 3px 20px 3px 0;
+    font-size: 1em; 
+    font-weight: 600;
+  } 
+                   
+}
+
+.file-download {
+  display: flex;
+  flex-direction: row;           
+  justify-content: space-between; 
+  align-items: center;
+  font-size: 16px;   
+                                  
+  &__download {  
+    margin-right: 10px;   
+    padding: 0;   
+    /*width: 1em; /* for a photo icon */
+    font-size: 1.4em;
+    color: #62687f;
+    cursor: pointer;  
+  } 
+  &__link {
+    font-size: 1em;   
+    color: #62687f;
+  }
+ 
+}
+
+.mob-auto-feature {
+  display: flex;
+  flex-direction: row;           
+  justify-content: space-between; 
+  align-items: center;    
+}
+  
+.mob-feature-box {
+  display: flex;
+  flex-direction: column;           
+  justify-content: space-between; 
+  align-items: flex-start;
+  padding: 20px 0;
+                                  
+  &__icon {     
+    padding: 0;   
+    height: 1.75em; 
+    cursor: pointer;  
+  } 
+  .icon--alignment { 
+    margin-left: 0;
+    padding-left: 0;
+  } 
+  &__text {
+    padding: 3px 0 3px 0;    
+    padding: 10px 30px 10px 10px; 
+    font-size: 1em; 
+    align-self: flex-end;
+  }
+   
+}
+
+.alignment {
+  display: flex;
+  flex-direction: row;           
+  justify-content: flex-start; 
+  align-items: center;
+  width: 100%;  
+}
+
+.mob-social-box {
+  display: flex;
+  flex-direction: row;           
+  justify-content: flex-end;
+  align-items: flex-end;   
+          
+      
+  &__social {
+    margin: 0 15px;
+    padding: 3px 0 3px 0;
+    display: block;  
+    height: 2.25em; 
+     
+  } 
+  .social--alignment { 
+    margin-right: 0;
+    padding-right: 0;
+  } 
+   
+}
+
+.model-description {
+  font-size: 16px;          
+  text-align: center; 
+  margin: 0 50px;
+  @media screen and (max-width: 773px) {
+    margin: 0;
+  }             
+  &__text {
+    font-size: 1em;   
+    line-height: 24px;
+  }
+
+}
+
+.model-button-box {
+  display: flex;
+  flex-direction: row;           
+  justify-content: center;
+  align-items: center; 
+  font-size: 16px;          
+  margin: 0 50px;
+  @media screen and (max-width: 773px) {
+    margin: 0;
+  }             
+  
+}
+
+.button {
+  display: flex;
+  flex-direction: row;           
+  justify-content: flex-start;
+  align-items: center; 
+  margin: 0 20px;
+  padding: 10px;
+  font-size: 1em;   
+  border: 1px solid gray;
+  outline: none;
+  cursor: pointer;  
+  background: transparent; 
+  @media screen and (max-width: $mobile-big_end-point) {
+    margin: 0 5px;
+    padding: 10px 3px;
+  } 
+  &__icon {
+    height: 1.75em;
+    margin-right: 3px;
+    @media screen and (max-width: $mobile-big_end-point) {
+      height: 1.5em;
+    } 
+  }
+
+}
+
+.button--style {
+  color: #ffffff;
+  background: #213584;
+  border: none;
+}
+
+.model-button-box {
+  display: flex;
+  flex-direction: row;           
+  justify-content: center;
+  align-items: center; 
+  font-size: 16px;          
+  margin: 0 50px;
+  @media screen and (max-width: 773px) {
+    margin: 0;
+  }             
+  
+}
+
+.mob-model-button-box {
+  display: flex;
+  flex-direction: column;           
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+}
+
+.mob-button {
+  display: flex;
+  flex-direction: row;           
+  justify-content: center;
+  align-items: center; 
+  margin: 17px 0;
+  padding: 10px 10px; 
+  width: 100%;
+  font-size: 1em;
+  border: 1px solid gray;
+  background: transparent;
+  outline: none;
+  cursor: pointer;   
+  &__icon {
+    display: none;
+    height: 1.75em;
+    margin-right: 8px;
+    @media screen and (max-width: $mobile-big_end-point) {
+      height: 1.5em;
+    } 
+  }
+}
+
+.mob-button--style {
+  color: #ffffff;
+  background: #2b6364;
+  border: none;
+}
+
+
+
+    

@@ -1,0 +1,35 @@
+
+.header {
+  position: fixed;     
+  top: 0;
+  left: 0; 
+  right: 0;   
+  height: $header_height; 
+  z-index: 50;
+  background: $header_bg; 
+  border-bottom: 1px solid silver;
+  @media screen and (max-width: $mobile-big_end-point) {
+    height: $header_mobile-height;
+  }
+  
+  animation: scroll-anim_1 0.5s forwards; 
+  
+  @media screen and (min-width: $tablet-small_starting-point) {
+    animation: scroll-anim_2 0.5s forwards;
+  }
+  
+  &--scroll {
+    display: none; 
+  }
+  
+}
+
+.header__line {
+  display: none;
+  height: 10px;
+  margin-top: 0px;
+  border: none;
+  background: $header-line_bg;
+}
+
+

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/layout/head.html', {
+    "title": "Home"
+  })
+  <body>
+    <div class="wrapper">
+      
+      @@include('html/layout/home-header.html', {}) 
+          
+      <main class="main">
+      
+        <!-- main page content -->  
+        <div class="page-home">
+          
+          <!-- TODO - module our-services -->
+          <section class="model">
+            
+            <div class="container container--mobile">
+              <div class="model__identifier-copy identifier-copy">                                                 
+                <span class="identifier-copy__code">5036TWE7</span>
+                <div class="identifier-copy__file-download file-download"> 
+                  <a class="file-download__link" href="#">                                                     
+                    <i class="file-download__download far fa-file-pdf"></i>Download / PDF
+                  </a>
+                  <!--<img class="auto-box__code-copy" src="icon/copy.png">--> 
+                </div>                              
+              </div>
+            </div>
+          
+            <div class="container container--desktop">
+            
+              <div class="model__auto-models auto-models">              
+                <h1 class="auto-models__title">Vito Tourer Pro Lang 114</h1>                             
+                <span class="auto-models__price">49 338,00 €</span>              
+              </div>
+            
+              <div class="model__auto-identifier auto-identifier">
+                <div class="auto-identifier__auto-box auto-box">                                                       
+                  <span class="auto-box__auto-name">Mercedes Benz</span> 
+                  <span class="auto-box__auto-code">5036TWE7</span>
+                  <i class="auto-box__code-copy far fa-copy"></i>
+                  <!--<img class="auto-box__code-copy" src="icon/copy.png">--> 
+                </div>                
+                <span class="auto-identifier__price-note">inkl. 19% MwSt.</span>                       
+              </div>
+            
+              <div class="model__auto-feature auto-feature">
+                <div class="auto-feature__feature-box feature-box">                                                    
+                  <img class="feature-box__icon icon--alignment" src="icon/feature-1.png" alt="photo">
+                  <span class="feature-box__text">4/4</span>
+                  <img class="feature-box__icon" src="icon/feature-2.png" alt="photo">
+                  <span class="feature-box__text">1</span>
+                  <img class="feature-box__icon" src="icon/transmission.png" alt="photo">
+                  <span class="feature-box__text">Automatik</span>
+                  <img class="feature-box__icon" src="icon/feature-4.png" alt="photo"> 
+                  <span class="feature-box__text">103kW / 140PS</span>
+                </div>   
+              
+                <div class="auto-feature__social-box social-box">        
+                  <img class="social-box__social" src="icon/whatsapp.png" alt="photo">
+                  <img class="social-box__social" src="icon/facebook.png" alt="photo">
+                  <img class="social-box__social social--alignment" src="icon/email.png" alt="photo">
+                </div>                    
+              </div>            
+            </div>                          
+                      
+            <swiper-container class="swiper-container">
+              <swiper-slide class="slide-box">
+                <img class="slide" src="img/image-1.png" alt="photo">
+              </swiper-slide>
+              <swiper-slide class="slide-box">
+                <img class="slide" src="img/image-2.png" alt="photo">
+              </swiper-slide>
+              <swiper-slide class="slide-box">
+                <img class="slide" src="img/image-3.png" alt="photo">
+              </swiper-slide>  
+            </swiper-container>   
+            
+            <div class="container container--desktop">
+              <div class="model__description model-description">    
+                <p class="model-description__text">Citroën Jumper oder Peugeot Boxer 3,5t Light oder 3,5t 
+                Heavy Chassis 4-Zylinder Turbodiesel, Euro 6d, Rußpartikelfilter 
+                Fahrerairbag Elektronische Wegfahrsperre, Zentralverriegelung mit 
+                Funkfernbedienung Scheibenbremsen vorne und hinten... Mehr</p>
+              </div>
+            </div>    
+            
+            <div class="container container--desktop">
+              <div class="model__button-box model-button-box">    
+                <button class="model-button-box__button button">
+                  <img class="button__icon" src="icon/edit.png" alt="photo">
+                    Weiter konfigurieren
+                </button>
+                <button class="model-button-box__button button">
+                  <img class="button__icon" src="icon/ellipse.png" alt="photo">
+                    Finanzierungsrechner
+                </button>
+                <button class="model-button-box__button button button--style">
+                  <!--<img class="button__icon" src="icon/ellipse.png" alt="photo">-->
+                    Finanzierungsrechner
+                </button>
+              </div>
+            </div>      
+          
+            <div class="container container--mobile">            
+              <div class="model__auto-models mob-auto-models">              
+                <h1 class="mob-auto-models__title">Vito Tourer Pro Lang 114</h1>                                    
+              </div>
+            
+              <div class="model__auto-identifier mob-auto-identifier">                                                 
+                <span class="mob-auto-identifier__name">Mercedes Benz</span>
+                <span class="mob-auto-identifier__price">49&nbsp;338,00&nbsp;€</span>                               
+              </div>
+              
+              <div class="model__auto-identifier mob-auto-identifier">                                                 
+                <span class="mob-auto-identifier__weight">Gewicht:</span>
+                <span class="mob-auto-identifier__value">ca.&nbsp;2.400,00&nbsp;kg</span>                               
+              </div>
+            
+              <div class="model__auto-feature mob-auto-feature">
+                <div class="mob-auto-feature__feature-box mob-feature-box">
+                  <div class="alignment">                                         
+                    <img class="mob-feature-box__icon icon--alignment" src="icon/feature-1.png" alt="photo">
+                    <span class="mob-feature-box__text">4/4</span>
+                  </div>
+                  <div class="alignment">  
+                    <img class="mob-feature-box__icon" src="icon/feature-2.png" alt="photo">
+                    <span class="mob-feature-box__text">1</span>
+                  </div>
+                  <div class="alignment">  
+                    <img class="mob-feature-box__icon" src="icon/transmission.png" alt="photo">
+                    <span class="mob-feature-box__text">Automatik</span>
+                  </div>
+                  <div class="alignment">  
+                    <img class="mob-feature-box__icon" src="icon/feature-4.png" alt="photo"> 
+                    <span class="mob-feature-box__text">103kW / 140PS</span>
+                  </div>
+                </div>   
+                    
+              </div>    
+                                                   
+            </div> 
+            
+            <div class="container container--mobile">
+              <div class="model__button-box mob-model-button-box">    
+                <button class="mob-model-button-box__button mob-button">
+                  <img class="mob-button__icon" src="icon/edit.png" alt="photo">
+                    Weiter konfigurieren
+                </button>
+                <button class="model-button-box__button mob-button">
+                  <img class="mob-button__icon" src="icon/ellipse.png" alt="photo">
+                    Finanzierungsrechner
+                </button>
+                <button class="mob-model-button-box__button mob-button mob-button--style">
+                  <img class="mob-button__icon" src="icon/ellipse.png" alt="photo">
+                    Finanzierungsrechner
+                </button>
+              </div>
+            </div>
+                                               
+          </section><!-- module our-services -->
+          <!-- module our-services -->
+                                                                                                      
+        </div><!-- page-home -->
+        <!-- main page content -->
+                    
+      </main>
+      
+      @@include('html/layout/footer.html', {})  
+    </div><!-- wrapper -->
+    
+    <script src="js/app.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+  </body>
+</html>
