@@ -6,6 +6,9 @@ vjsFunctions.isWebp();
 import { scrolling } from "./modules/scrolling.js";
 scrolling();
 
+import { iconsControl } from "./modules/icons-control.js";
+iconsControl();
+
 import { languagesList } from "./modules/languages-list.js";
 languagesList();
 
@@ -32,6 +35,7 @@ iconMenu.addEventListener('click', showMenu);
 
 function showMenu() {
   iconMenu.classList.toggle('fa-times');
+  iconMenu.classList.add('stop-propagation');
   const menu = document.querySelector('.menu');
   const animSec = 0.5 * 1000;
   const valueAnim = menu.style.animationDuration = `${animSec / 1000}s`;
@@ -73,13 +77,14 @@ function showMenu() {
   // TODO - optional - hide menu when clicked anywhere
   document.addEventListener('click', (event) => {
     const iconMenu = document.querySelector('.menu-icon');
-    const classIs = event.target.classList.contains('blind-click');
+    const classIs = event.target.classList.contains('stop-propagation');
+    const menuMobileBox = document.querySelector(".menu-mobile");
     const classIsIcon = iconMenu.classList.contains('fa-times'); 
     //console.log(classIs); 
     //console.log(classIsIcon);
     const clickedClass = event.target.className;
     //console.log(clickedClass); 
-    if (classIs == false && classIsIcon == true) { 
+    if (classIs == false && classIsIcon == true && !menuMobileBox.contains(event.target)) { 
       iconMenu.classList.remove('fa-times'); 
       mobileLayer.classList.remove('mob-layer-on');
       enablePageScrolling(); 
