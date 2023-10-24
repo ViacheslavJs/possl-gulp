@@ -1,76 +1,77 @@
-.languages {  
-    
-    display: flex;
-    flex-direction: row; 
-    justify-content: flex-end; 
-    align-items: center; 
-    padding: 5px 20px;
-    font-size: 16px;   
-    cursor: pointer;
-    border-left: 1px solid $link-menu_color;
-    @media screen and (max-width: $mobile-big_end-point) {    
-      position: absolute;       
-      top: 0;
-      left: 15px; 
-      padding: 0;
-      border: none;
-      
-    }
+.languages {      
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-end; 
+  align-items: center; 
+  padding: 0px 20px;
+  font-size: 16px;   
+  cursor: pointer;
+  border-left: 1px solid $link-menu_color;
+  @media screen and (max-width: $mobile-big_end-point) {    
+    position: absolute;       
+    top: 0;
+    left: 15px; 
+    padding: 0;
+    border: none;     
+  }
+  
 }
 
 .languages__list {
-    list-style: none;      
-    padding: 0;
-    margin: 0;
-    float: left;
-    position: relative;    
+  list-style: none;      
+  padding: 0;
+  margin: 0;
+  float: left;
+  position: relative;    
 }
 
 .languages__link {
-    height: 50px; 
-    display: block;
-    line-height: 50px;
-    padding: 0 5px;
-    text-decoration: none;
-    text-transform: uppercase; 
-    color: $link-menu_color; 	
+  height: 50px; 
+  display: block;
+  line-height: 50px;
+  padding: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase; 
+  color: $link-menu_color; 	
 }
 
 .languages__link:hover {
-    /*background: #69c;*/
+  /*background: #69c;*/
 }
 
 .languages__submenu { 
-    display: none;
-    width: 100%;
-    position: absolute;  
-    left: 0;
-    top: 130%; 
-    z-index: 100;
-    background: #3c888a;
-    box-shadow: 0px 2px 5px 0px rgba(79,79,79,0.4);
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(79,79,79,0.4);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(79,79,79,0.4);
+  width: 100%;
+  position: absolute;  
+  left: 0;
+  top: 100%; 
+  z-index: 100;
+  background: #3c888a;
+  box-shadow: 0px 2px 5px 0px rgba(79,79,79,0.4);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(79,79,79,0.4);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(79,79,79,0.4);
+    
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; 
 }
 
 .languages__item:hover .languages__submenu {
-    /*display: block; */
+  /*display: block; */
 }
 
 .languages__submenu-item {
-    display: block; 
-    margin: 13px 0px 13px -40px; 
-    padding: 5px;
-    
+  display: block; 
+  margin: 13px 0px 13px -40px; 
+  padding: 5px;    
 }
 
 .languages__link-sub {
-    background: #f60;
-    white-space: nowrap; 
+  background: #f60;
+  white-space: nowrap; 
 }
 
 .languages__link-sub:hover {
-    background: #d30;
+  background: #d30;
 }
 
 .languages__submenu-link {
