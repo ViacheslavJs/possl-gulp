@@ -35,7 +35,7 @@ iconMenu.addEventListener('click', showMenu);
 
 function showMenu() {
   iconMenu.classList.toggle('fa-times');
-  iconMenu.classList.add('stop-propagation');
+  iconMenu.classList.add('stop-propagation'); // класс виртуальный!
   const menu = document.querySelector('.menu');
   const animSec = 0.5 * 1000;
   const valueAnim = menu.style.animationDuration = `${animSec / 1000}s`;
